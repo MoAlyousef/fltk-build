@@ -1,5 +1,7 @@
 # fltk-build
 
+## Work in progress 
+
 Allows creating native C/C++ fltk/cfltk modules to be used from Rust. This is done by exposing the include paths and lib paths from the built fltk-sys crate on your system.
 
 ## Usage
