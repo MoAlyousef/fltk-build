@@ -24,7 +24,8 @@ fn main() {
     cc::Build::new()
         .file("src/my_wid.cpp")
         .cpp(true)
-        .flag("-w")
+        .flag_if_supported("-w")
+        .flag_if_supported("-fno-rtti")
         .include(&fltk_out_dir.join("include"))
         .compile("my_wid");
 
