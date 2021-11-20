@@ -50,8 +50,8 @@ fn main() {
 
     cmake::Config::new("src")
     .define(
-        "CMAKE_CXX_FLAGS",
-        &format!("{}I {}", FLAG_OP, fltk_out_dir.join("include").display()),
+        "CMAKE_CXX_STANDARD_INCLUDE_DIRECTORIES",
+        fltk_out_dir.join("include"),
     )
     .build();
 
