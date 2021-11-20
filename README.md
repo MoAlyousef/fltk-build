@@ -81,6 +81,7 @@ If you're using CMake, a minimal CMakeLists.txt example:
 ```cmake
 cmake_minimum_required(VERSION 3.0)
 project(wid)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti -fno-exceptions")
 
 add_library(my_wid my_wid.cpp)
 
