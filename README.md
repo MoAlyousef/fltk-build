@@ -88,7 +88,7 @@ add_library(my_wid my_wid.cpp)
 install(TARGETS my_wid DESTINATION ${CMAKE_INSTALL_PREFIX})
 ```
 
-Example crate using fltk-build:
+Example crate (not published on crates.io) using fltk-build:
 https://github.com/MoAlyousef/white-frame
 
 ## features
