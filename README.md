@@ -62,7 +62,7 @@ fn main() {
     println!("cargo:rustc-link-lib=static=my_wid");
 
     match target_os.as_str() {
-        "window" => (), // doesn't need explicit linking to the C++ stdlib
+        "windows" => (), // doesn't need explicit linking to the C++ stdlib
         "macos" => println!("cargo:rustc-link-lib=c++"),
         _ => println!("cargo:rustc-link-lib=stdc++"),
     }
