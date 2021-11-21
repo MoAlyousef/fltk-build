@@ -39,8 +39,6 @@ use std::env;
 use std::path::PathBuf;
 use fltk_build::fltk_out_dir;
 
-const FLAG_OP: char = if cfg!(target_os = "windows") { '/' } else { '-' };
-
 fn main() {
     let out_dir = PathBuf::from(env::var("OUT_DIR").unwrap());
     let target_os = env::var("CARGO_CFG_TARGET_OS").unwrap();
