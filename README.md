@@ -60,7 +60,7 @@ fn main() {
     println!("cargo:rustc-link-lib=static=my_wid");
 
     match target_os.as_str() {
-        "window" => (), // doesn't need explicit linking to the C++ stdlib
+        "windows" => (), // doesn't need explicit linking to the C++ stdlib
         "macos" => println!("cargo:rustc-link-lib=c++"),
         _ => println!("cargo:rustc-link-lib=stdc++"),
     }
@@ -87,7 +87,7 @@ add_library(my_wid my_wid.cpp)
 install(TARGETS my_wid DESTINATION ${CMAKE_INSTALL_PREFIX})
 ```
 
-Example crate using fltk-build:
+Example crate (not published on crates.io) using fltk-build:
 https://github.com/MoAlyousef/white-frame
 
 
