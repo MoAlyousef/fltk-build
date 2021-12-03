@@ -86,6 +86,6 @@ install(TARGETS my_wid DESTINATION ${CMAKE_INSTALL_PREFIX})
 ```
 
 Example crate (not published on crates.io) using fltk-build:
-https://github.com/MoAlyousef/white-frame
+https://github.com/fltk-rs/fltk-flow
 
 
